@@ -45,7 +45,7 @@ const Navbar = ({ setShowLogin, userRole }) => {
         </a>
       </ul>
       <div className="navbar-right">
-        {userRole === "admin" ? (
+        {userRole === "admin" || !token ? (
           <></>
         ) : (
           <>
